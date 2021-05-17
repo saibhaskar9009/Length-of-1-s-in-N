@@ -1,0 +1,33 @@
+#include<stdio.h>
+
+void count1s(int N)
+{
+    
+    int count1 = 0;
+ 
+   
+    while (N > 0) {
+ 
+        
+        if (N & 1) {
+            count1++;
+        }
+ 
+                N = N >> 1;
+    }
+ 
+    
+    printf("Count of 1s in N is %d\n", count1);
+}
+ 
+
+int main()
+{
+    
+    int N;
+    scanf("%d", &N);
+ 
+    
+    count1s(N);
+    return 0;
+}
